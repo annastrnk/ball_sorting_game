@@ -36,12 +36,13 @@ export default function BallCountControl({ color, count, onChange }: BallCountCo
         </button>
 
         <input
-          type="number"
+          type="text"
           value={count}
           onChange={(e) => onChange(parseInt(e.target.value) || 0)}
           min={MIN_BALLS_PER_COLOR}
           max={MAX_BALLS_PER_COLOR}
           className={styles.input}
+          readOnly
         />
 
         <button
