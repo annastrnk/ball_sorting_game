@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.leftSection {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.groupedText {
+  color: white;
+  font-size: 16px;
+}
+
+.timer {
+  color: #4a9eff;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: monospace;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.button {
+  padding: 6px 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+}
+
+.pauseButton {
+  background: #9b59b6;
+  font-weight: 600;
+}
+
+.pauseButton.paused {
+  background: #ffa500;
+}
+
+.configButton {
+  background: #3a4554;
+}
+
+.restartButton {
+  background: #4a9eff;
+  font-weight: 600;
+}
+

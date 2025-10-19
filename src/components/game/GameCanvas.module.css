@@ -1,0 +1,41 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.canvas {
+  background: #0f1724;
+  border-radius: 8px;
+  cursor: none;
+  opacity: 1;
+  transition: opacity 0.3s;
+  max-width: 100%;
+  max-height: 60vh;
+  width: auto;
+  height: auto;
+}
+
+.canvas.paused {
+  opacity: 0.5;
+}
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0 16px;
+  }
+  
+  .canvas {
+    border-radius: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 0 8px;
+  }
+  
+  .canvas {
+    border-radius: 4px;
+  }
+}
+

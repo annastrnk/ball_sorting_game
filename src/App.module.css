@@ -1,0 +1,14 @@
+.app {
+  display: flex;
+  background: #071029;
+  padding: 24px;
+}
+
+.content {
+}
+
+.title {
+  color: #fff;
+  margin-bottom: 12px;
+}
+

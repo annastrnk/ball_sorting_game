@@ -1,0 +1,46 @@
+.container {
+  margin-bottom: 20px;
+  padding: 16px;
+  background: rgba(74, 158, 255, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(74, 158, 255, 0.3);
+}
+
+.label {
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: #aaa;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.button {
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.button.selected {
+  background: #4a9eff;
+  border: 2px solid #4a9eff;
+  font-weight: 600;
+}
+
+.button.selected:hover {
+  background: #4a9eff;
+}
+

@@ -1,0 +1,156 @@
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { 
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal {
+  background: linear-gradient(135deg, #1a2332 0%, #2a3444 100%);
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  animation: slideUp 0.4s ease;
+  border: 2px solid rgba(74, 158, 255, 0.3);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.emoji {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.title {
+  margin: 0;
+  font-size: 32px;
+  color: #4a9eff;
+  font-weight: 700;
+}
+
+.subtitle {
+  color: #aaa;
+  margin: 10px 0 0 0;
+  font-size: 16px;
+}
+
+.timeContainer {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.timeLabel {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.time {
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+  font-family: monospace;
+}
+
+.time.newRecord {
+  color: #4a9eff;
+}
+
+.recordBadge {
+  color: #4a9eff;
+  font-size: 14px;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.bestTimeContainer {
+  text-align: center;
+  margin-bottom: 24px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+.bestTimeLabel {
+  color: #888;
+  font-size: 12px;
+}
+
+.bestTime {
+  color: #ffd36f;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: monospace;
+  margin-top: 4px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.button {
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.primaryButton {
+  padding: 14px 24px;
+  background: #4a9eff;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(74, 158, 255, 0.3);
+}
+
+.primaryButton:hover {
+  background: #3a8eef;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(74, 158, 255, 0.4);
+}
+
+.secondaryButton {
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+}
+
+.secondaryButton:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+

@@ -1,0 +1,28 @@
+.legend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  transition: box-shadow 0.3s;
+}
+
+.circle.active {
+  box-shadow: 0 0 12px currentColor;
+}
+
+.label {
+  color: white;
+  font-size: 14px;
+}
+
